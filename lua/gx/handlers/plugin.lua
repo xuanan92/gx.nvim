@@ -2,7 +2,7 @@ local helper = require("gx.helper")
 
 local M = {
   -- every filename but only lua
-  filetype = { "lua", "vim" },
+  filetype = { "lua", "vim", "nvim" },
   filename = nil,
 }
 

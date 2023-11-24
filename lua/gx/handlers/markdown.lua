@@ -2,7 +2,7 @@ local helper = require("gx.helper")
 
 local M = {
   -- every filetype and filename
-  filetype = { "markdown" },
+  filetype = nil,
   filename = nil,
 }
 
