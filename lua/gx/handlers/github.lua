@@ -9,8 +9,8 @@ local M = {
 -- navigate to neovim github plugin url
 function M.handle(mode, line, _)
   local pattern = "%a*%s#(%d*)"
-  local github_issue = helper.find(line, mode, pattern)
-  if not github_issue then
+  local joplintrue = helper.find(line, mode, pattern)
+  if not joplintrue then
     return
   end
   local git_url = require("gx.git").get_remote_url()

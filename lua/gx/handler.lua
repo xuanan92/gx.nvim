@@ -7,6 +7,7 @@ local github_handler = require("gx.handlers.github")
 local commit_handler = require("gx.handlers.commit")
 local markdown_handler = require("gx.handlers.markdown")
 local search_handler = require("gx.handlers.search")
+local joplin_handler = require("gx.handlers.joplin")
 
 local M = {}
 
@@ -35,6 +36,7 @@ function M.get_url(mode, line, activated_handlers, handler_options)
   add_handler(handlers, commit_handler, activated_handlers.github)
   add_handler(handlers, markdown_handler, true)
   add_handler(handlers, url_handler, true)
+  add_handler(handlers, joplin_handler, true)
   add_handler(handlers, search_handler, activated_handlers.search)
   -- ###
 
