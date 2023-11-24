@@ -79,11 +79,11 @@ local function with_defaults(options)
         options.handlers.package_json,
         true
       ),
-      search = helper.ternary(options.handlers.search ~= nil, options.handlers.search, true),
       joplin = helper.ternary(options.handlers.joplin ~= nil, options.handlers.joplin, true),
+      search = helper.ternary(options.handlers.search ~= nil, options.handlers.search, true),
     },
     handler_options = {
-      search_engine = options.handler_options.search_engine or "",
+      search_engine = options.handler_options.search_engine or "google",
     },
   }
 end

@@ -9,12 +9,11 @@ local M = {
 -- navigate to neovim github plugin url
 function M.handle(mode, line, _)
   local joplin_pattern = "resources/%w+"
-  local prefix = "file:///home/xuanan92/.config/joplin/"
   local joplin = helper.find(line, mode, joplin_pattern)
   if not joplin then
     return
   end
-  return prefix .. joplin_pattern
+  return "file:///home/xuanan92/.config/joplin/" .. joplin_pattern
 end
 
 return M
