@@ -83,7 +83,9 @@ local function with_defaults(options)
       search = helper.ternary(options.handlers.search ~= nil, options.handlers.search, true),
     },
     handler_options = {
-      search_engine = options.handler_options.search_engine or "google",
+      search_engine = nil,
+      -- search_engine = "",
+      -- search_engine = options.handler_options.search_engine or "",
     },
   }
 end
