@@ -84,8 +84,7 @@ local function with_defaults(options)
     },
     handler_options = {
       search_engine = nil,
-      -- search_engine = "",
-      -- search_engine = options.handler_options.search_engine or "",
+      search_engine = options.handler_options.search_engine or "google",
     },
   }
 end
